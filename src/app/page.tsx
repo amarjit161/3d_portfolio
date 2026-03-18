@@ -4,6 +4,7 @@ import Header from "@/components/header";
 import Hero from "@/components/hero";
 import Projects from "@/components/projects";
 import Services from "@/components/Services";
+import Certifications from "@/components/Certifications";
 import Skills from "@/components/Skills";
 import Testimonials from "@/components/testimonials";
 import Timeline from "@/components/Timeline";
@@ -16,6 +17,7 @@ export default async function Home() {
     about,
     testimonials,
     services,
+    certifications,
     skills,
     projects,
     social_handles,
@@ -30,6 +32,7 @@ export default async function Home() {
       <About about={about} timeline={timeline} />
       <Skills skills={skills} />
       <Projects projects={projects} />
+      {certifications && <Certifications certifications={certifications} />}
       <Services services={services} />
       <Timeline timeline={timeline} />
       <Testimonials testimonials={testimonials} />

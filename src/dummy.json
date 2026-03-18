@@ -32,24 +32,6 @@
   "role": "admin",
   "timeline": [
     {
-      "company_name": "Cyno Pharmaceutical",
-      "summary": "Managing IT infrastructure, configuring firewalls, maintaining network security, and supporting system operations across the organization.",
-      "sequence": 2,
-      "startDate": "2020-01-01T00:00:00.000Z",
-      "endDate": "2026-03-18T15:50:48.012Z",
-      "jobTitle": "IT Executive",
-      "jobLocation": "",
-      "bulletPoints": [
-        "Managing IT infrastructure",
-        "Configuring firewalls",
-        "Maintaining network security",
-        "Supporting system operations"
-      ],
-      "forEducation": false,
-      "enabled": true,
-      "_id": "65f1fe900556c3f887e9db94"
-    },
-    {
       "company_name": "Relevant IT Background",
       "summary": "Focused on IT infrastructure, networking, and system administration.",
       "sequence": 1,
@@ -65,6 +47,75 @@
       "forEducation": true,
       "enabled": true,
       "_id": "65f1fe900556c3f887e9db95"
+    },
+    {
+      "company_name": "Cyno Pharmaceutical",
+      "summary": "Managing IT infrastructure, configuring firewalls, maintaining network security, and supporting system operations across the organization.",
+      "sequence": 1,
+      "startDate": "2024-11-01T00:00:00.000Z",
+      "endDate": "Present",
+      "jobTitle": "IT Executive",
+      "jobLocation": "New Delhi, India",
+      "bulletPoints": [
+        "Manage Linux and Windows server environments",
+        "Deploy and maintain self-hosted cloud infrastructure",
+        "Implement strong network security protocols and firewalls",
+        "Oversee daily IT operations and desktop support"
+      ],
+      "forEducation": false,
+      "enabled": true,
+      "_id": "exp_curr_1773857051665"
+    },
+    {
+      "company_name": "UNAYUR MARKETING",
+      "summary": "Administered and optimized Linux-based systems and network infrastructures to guarantee high availability.",
+      "sequence": 2,
+      "startDate": "2023-06-01T00:00:00.000Z",
+      "endDate": "2024-10-01T00:00:00.000Z",
+      "jobTitle": "Linux System Engineer",
+      "jobLocation": "",
+      "bulletPoints": [
+        "Configured and hardened Linux server environments",
+        "Managed virtualization tasks using Proxmox/VMware",
+        "Automated routine maintenance tasks"
+      ],
+      "forEducation": false,
+      "enabled": true,
+      "_id": "exp_prev1_1773857051665"
+    },
+    {
+      "company_name": "SHANVI INFOTEC",
+      "summary": "Resolved complex hardware, software, and networking issues for enterprise personnel.",
+      "sequence": 3,
+      "startDate": "2023-02-01T00:00:00.000Z",
+      "endDate": "2023-06-01T00:00:00.000Z",
+      "jobTitle": "Desktop Support Engineer L2",
+      "jobLocation": "",
+      "bulletPoints": [
+        "Provided Tier 2 technical support for desktop and network issues",
+        "Led troubleshooting for advanced OS-level errors",
+        "Mentored L1 personnel and managed escalated tickets"
+      ],
+      "forEducation": false,
+      "enabled": true,
+      "_id": "exp_prev2_1773857051665"
+    },
+    {
+      "company_name": "Nexus Solutions",
+      "summary": "Maintained and supported IT desktop environments while ensuring smooth daily operations.",
+      "sequence": 4,
+      "startDate": "2020-10-01T00:00:00.000Z",
+      "endDate": "2023-01-01T00:00:00.000Z",
+      "jobTitle": "Desktop Support Engineer L1",
+      "jobLocation": "",
+      "bulletPoints": [
+        "Provided first-line IT support for local users",
+        "Handled software installations and basic troubleshooting",
+        "Maintained hardware inventory logs"
+      ],
+      "forEducation": false,
+      "enabled": true,
+      "_id": "exp_prev3_1773857051665"
     }
   ],
   "skills": [
@@ -434,5 +485,49 @@
   "createdAt": "2024-01-26T12:14:36.514Z",
   "updatedAt": "2024-05-08T17:53:29.758Z",
   "__v": 74,
-  "refreshToken": ""
+  "refreshToken": "",
+  "certifications": [
+    {
+      "name": "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+      "desc": "Certified in Oracle Cloud Infrastructure AI Foundations, demonstrating knowledge of cloud concepts, AI/ML fundamentals, and Oracle Cloud services.",
+      "charge": "",
+      "linkTarget": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=33AF2365B76737155FD4610888C6B10801B8411D6A8748C150A7DC22D8ECE49E",
+      "actionText": "View Credential",
+      "enabled": true,
+      "_id": "cert_1773857979920_oracle",
+      "image": {
+        "url": "/images/certificates/oracle.png"
+      }
+    },
+    {
+      "name": "Linux Administration",
+      "desc": "Strong knowledge of Linux systems, server management, and troubleshooting.",
+      "charge": "",
+      "enabled": true,
+      "_id": "cert_1773857574516_2",
+      "image": {
+        "url": "/images/certificates/linux.png"
+      }
+    },
+    {
+      "name": "Networking & Firewall",
+      "desc": "Experience configuring firewalls, routers, and secure network environments.",
+      "charge": "",
+      "enabled": true,
+      "_id": "cert_1773857574516_3",
+      "image": {
+        "url": "/images/certificates/networking.png"
+      }
+    },
+    {
+      "name": "Cloud & Self-Hosting",
+      "desc": "Deployed and managed applications on DigitalOcean and self-hosted environments.",
+      "charge": "",
+      "enabled": true,
+      "_id": "cert_1773857574516_4",
+      "image": {
+        "url": "/images/certificates/cloud.png"
+      }
+    }
+  ]
 }

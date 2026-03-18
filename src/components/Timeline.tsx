@@ -48,9 +48,9 @@ const Timeline = ({ timeline }: ExperienceProps) => {
                 </span>
                 <span className="max-md:hidden">{" - "}</span>
                 <span className="italic">
-                  {formatDate(exp.endDate).month +
-                    ", " +
-                    formatDate(exp.endDate).year}
+                  {exp.endDate === "Present" 
+                    ? "Present" 
+                    : formatDate(exp.endDate).month + ", " + formatDate(exp.endDate).year}
                 </span>
               </div>
             </div>
