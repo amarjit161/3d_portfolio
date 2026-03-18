@@ -496,7 +496,8 @@
       "enabled": true,
       "_id": "cert_1773857979920_oracle",
       "image": {
-        "url": "/images/certificates/oracle.png"
+        "url": "/images/certificates/oracle.png",
+        "public_id": ""
       }
     },
     {
@@ -506,8 +507,11 @@
       "enabled": true,
       "_id": "cert_1773857574516_2",
       "image": {
-        "url": "/images/certificates/linux.png"
-      }
+        "url": "/images/certificates/linux.png",
+        "public_id": ""
+      },
+      "linkTarget": "",
+      "actionText": ""
     },
     {
       "name": "Networking & Firewall",
@@ -516,8 +520,11 @@
       "enabled": true,
       "_id": "cert_1773857574516_3",
       "image": {
-        "url": "/images/certificates/networking.png"
-      }
+        "url": "/images/certificates/networking.png",
+        "public_id": ""
+      },
+      "linkTarget": "",
+      "actionText": ""
     },
     {
       "name": "Cloud & Self-Hosting",
@@ -526,8 +533,11 @@
       "enabled": true,
       "_id": "cert_1773857574516_4",
       "image": {
-        "url": "/images/certificates/cloud.png"
-      }
+        "url": "/images/certificates/cloud.png",
+        "public_id": ""
+      },
+      "linkTarget": "",
+      "actionText": ""
     }
   ]
 }

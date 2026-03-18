@@ -58,7 +58,7 @@ export interface Project {
 }
 
 export interface Image {
-  public_id: string;
+  public_id?: string;
   url: string;
 }
 
@@ -77,6 +77,8 @@ export interface Service {
   enabled: boolean;
   _id: string;
   image: Image;
+  linkTarget?: string;
+  actionText?: string;
 }
 
 export interface Testimonial {
