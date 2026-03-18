@@ -489,15 +489,15 @@
   "certifications": [
     {
       "name": "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
-      "desc": "Certified in Oracle Cloud Infrastructure AI Foundations, demonstrating knowledge of cloud concepts, AI/ML fundamentals, and Oracle Cloud services.",
+      "desc": "Certified in Oracle Cloud Infrastructure AI Foundations, demonstrating knowledge of cloud concepts and AI/ML basics.",
       "charge": "",
       "linkTarget": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=33AF2365B76737155FD4610888C6B10801B8411D6A8748C150A7DC22D8ECE49E",
-      "actionText": "View Credential",
+      "actionText": "View Certificate",
       "enabled": true,
-      "_id": "cert_1773857979920_oracle",
+      "_id": "1",
       "image": {
         "url": "/images/certificates/oracle.png",
-        "public_id": ""
+        "public_id": "oracle-cert"
       }
     },
     {
@@ -505,10 +505,10 @@
       "desc": "Strong knowledge of Linux systems, server management, and troubleshooting.",
       "charge": "",
       "enabled": true,
-      "_id": "cert_1773857574516_2",
+      "_id": "2",
       "image": {
         "url": "/images/certificates/linux.png",
-        "public_id": ""
+        "public_id": "linux-cert"
       },
       "linkTarget": "",
       "actionText": ""
@@ -518,10 +518,10 @@
       "desc": "Experience configuring firewalls, routers, and secure network environments.",
       "charge": "",
       "enabled": true,
-      "_id": "cert_1773857574516_3",
+      "_id": "3",
       "image": {
         "url": "/images/certificates/networking.png",
-        "public_id": ""
+        "public_id": "networking-cert"
       },
       "linkTarget": "",
       "actionText": ""
@@ -531,10 +531,10 @@
       "desc": "Deployed and managed applications on DigitalOcean and self-hosted environments.",
       "charge": "",
       "enabled": true,
-      "_id": "cert_1773857574516_4",
+      "_id": "4",
       "image": {
         "url": "/images/certificates/cloud.png",
-        "public_id": ""
+        "public_id": "cloud-cert"
       },
       "linkTarget": "",
       "actionText": ""

@@ -58,7 +58,7 @@ export interface Project {
 }
 
 export interface Image {
-  public_id?: string;
+  public_id: string;
   url: string;
 }
 
