@@ -172,19 +172,15 @@ const navLinks = [
   },
   {
     title: "About",
-    href: "#about",
-  },
-  {
-    title: "Services",
-    href: "#services",
+    href: "/about",
   },
   {
     title: "Projects",
-    href: "#projects",
+    href: "/projects",
   },
   {
     title: "Contact",
-    href: "#contact",
+    href: "/contact",
   },
 ];
 
