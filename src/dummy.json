@@ -1,18 +1,18 @@
 {
   "about": {
-    "name": "Amarjit Sharma",
+    "name": "Amarjit",
     "title": "IT Executive",
     "subTitle": "IT Executive | System Administrator | Homelab Enthusiast",
     "description": "I am an IT Executive with hands-on experience in system administration, virtualization, and network security. I specialize in deploying and managing self-hosted solutions, configuring firewalls, and maintaining enterprise IT infrastructure. I actively build and manage homelab environments using Proxmox and VMware, and I have experience deploying production-grade applications on cloud platforms like DigitalOcean.",
     "quote": "Live the Life as you want",
     "exp_year": "5",
-    "address": "Los Angeles , America",
+    "address": "Delhi, India",
     "some_total": "90",
-    "phoneNumber": "+91-9528391901",
+    "phoneNumber": "",
     "contactEmail": "info@amarjit.co.in",
     "avatar": {
-      "public_id": "portfolio3/1713995155677-122l5x.webp",
-      "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/portfolio3/1713995155677-122l5x.webp"
+      "public_id": "profile_image",
+      "url": "/profile.png"
     },
     "alternateAvatars": [
       {
@@ -231,9 +231,29 @@
   "youtube": [],
   "projects": [
     {
+      "liveurl": "",
+      "githuburl": "",
+      "title": "MDM & Endpoint Security",
+      "sequence": 6,
+      "image": {
+        "url": "/mdm-endpoint.jpg"
+      },
+      "description": "Implemented and managed ManageEngine Endpoint Central for centralized device management across enterprise systems. Configured security policies including DLP, antivirus protection, patch management, and remote monitoring to ensure secure and efficient IT infrastructure.\n\n✨ Features Highlight:\n• Managed devices across Windows, laptops, and mobile systems\n• Configured Data Loss Prevention (DLP) policies\n• Deployed and monitored antivirus protection\n• Automated patch management and system updates\n• Enabled remote troubleshooting and monitoring\n• Strengthened enterprise security infrastructure",
+      "techStack": [
+        "MDM",
+        "Endpoint Security",
+        "DLP",
+        "Antivirus",
+        "Patch Management",
+        "Enterprise IT"
+      ],
+      "_id": "mdm_proj_new",
+      "enabled": true
+    },
+    {
       "liveurl": "https://wedding.amarjit.co.in/",
       "githuburl": "",
-      "title": "Wedding Invitation Platform (Self-Hosted)",
+      "title": "Wedding Invitation Site",
       "sequence": 5,
       "image": {
         "url": "/wedding-thumbnail.png"
@@ -242,10 +262,11 @@
       "techStack": [
         "Next.js",
         "Tailwind CSS",
+        "Full Stack",
         "Self-Hosted",
-        "Google Maps",
-        "Cloudinary",
-        "Full Stack"
+        "Responsive",
+        "Media Integration",
+        "Real-Time Features"
       ],
       "_id": "wedding_proj_1773852160073",
       "enabled": true
@@ -295,13 +316,18 @@
       "title": "Proxmox Homelab Server",
       "sequence": 2,
       "image": {
-        "public_id": "1706285431821-3lfg2r",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706285431821-3lfg2r"
+        "url": "/proxmox-thumbnail.png"
       },
-      "description": "Set up a virtualization environment on Lenovo ThinkPad W520 using Proxmox for running multiple virtual machines. (Type: Homelab)",
+      "description": "Designed and deployed a powerful homelab virtualization environment using Proxmox on a Lenovo ThinkPad, enabling efficient management of multiple virtual machines and services. Implemented secure networking, remote access, and self-hosted applications to simulate real-world enterprise infrastructure.\n\n💡 Simulating enterprise-grade infrastructure in a personal homelab environment.\n\n✨ Features Highlight:\n• Hosted multiple OS environments (Ubuntu, Windows, macOS)\n• Deployed Pi-hole for network-wide ad blocking\n• Configured Tailscale VPN for secure remote access\n• Set up Jellyfin media server for streaming\n• Used Ventoy for multi-boot OS management\n• Managed networking, storage, and resource allocation\n• Tested different Linux distributions and environments",
       "techStack": [
         "Proxmox",
-        "Virtualization"
+        "Virtualization",
+        "Homelab",
+        "Linux",
+        "Networking",
+        "Pi-hole",
+        "Tailscale",
+        "Jellyfin"
       ],
       "_id": "proj_2",
       "enabled": true
@@ -488,7 +514,7 @@
   "refreshToken": "",
   "certifications": [
     {
-      "name": "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+      "name": "OCI AI Foundations Associate (2025)",
       "desc": "Certified in Oracle Cloud Infrastructure AI Foundations, demonstrating knowledge of cloud concepts and AI/ML basics.",
       "charge": "",
       "linkTarget": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=33AF2365B76737155FD4610888C6B10801B8411D6A8748C150A7DC22D8ECE49E",

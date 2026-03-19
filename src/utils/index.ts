@@ -27,19 +27,19 @@ export function constructMetadata({
     title,
     description,
     keywords: [
-      "Full Stack Developer",
-      "React Developer",
-      "Node.js Developer",
+      "IT Executive",
+      "System Administrator",
+      "Homelab Engineer",
       "Portfolio",
       "Projects",
       "Skills",
     ],
     authors: [
       {
-        name: "Tehseen",
+        name: "Amarjit",
       },
     ],
-    creator: "Tehseen",
+    creator: "Amarjit",
     openGraph: {
       type: "website",
       locale: "en_US",
@@ -53,7 +53,7 @@ export function constructMetadata({
       title,
       description,
       images: [image],
-      creator: "@tehseen_type",
+      creator: "@amarjit",
     },
     icons,
     metadataBase: new URL(siteConfig.url),

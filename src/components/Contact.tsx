@@ -175,14 +175,13 @@ const Contact = ({ email, social_handle, about }: ContactProps) => {
               </Transition>
               <div className="text-2xl md:text-4xl font-bold py-2">
                 <Transition>
-                  <TextReveal>{email}</TextReveal>
+                  <Link href={`mailto:${email}`} className="hover:text-blue-400 transition-colors duration-300">
+                    <TextReveal>{email}</TextReveal>
+                  </Link>
                 </Transition>
               </div>
               <Transition>
-                <div className="pb-1 text-white/80">{about.phoneNumber}</div>
-              </Transition>
-              <Transition>
-                <div className="text-white/80">{about.address}</div>
+                <div className="text-white/80 mt-1">{about.address}</div>
               </Transition>
             </div>
 
@@ -193,7 +192,7 @@ const Contact = ({ email, social_handle, about }: ContactProps) => {
                     key={social._id}
                     transition={{ delay: 0.4 + index * 0.1 }}
                   >
-                    <Link href={social.url} target="_blank">
+                    <Link href={social.url} target="_blank" className="hover:text-blue-400 transition-colors duration-300">
                       <TextReveal>{social.platform}</TextReveal>
                     </Link>
                   </Transition>
@@ -203,20 +202,9 @@ const Contact = ({ email, social_handle, about }: ContactProps) => {
           </div>
         </div>
       </div>
-      <footer className="flex items-center justify-between md:px-8 px-2 py-4 text-sm">
+      <footer className="flex items-center justify-between md:px-8 px-2 py-4 text-sm mt-8 border-t border-white/10">
         <Transition>
-          <div>&copy; {new Date().getFullYear()} ThePortfolio</div>
-        </Transition>
-        <Transition>
-          <p>
-            developed by @
-            <Link
-              href={"https://twitter.com/tehseen_type"}
-              className="hover:underline"
-            >
-              tehseen
-            </Link>
-          </p>
+          <div className="text-white/60 hover:text-white/90 transition-colors duration-300">&copy; {new Date().getFullYear()} Amarjit | IT Executive & Homelab Engineer</div>
         </Transition>
       </footer>
     </motion.section>

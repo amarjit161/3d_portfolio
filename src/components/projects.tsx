@@ -158,6 +158,27 @@ const Card = ({ title, image, description, techStack, liveurl }: Project) => {
           </div>
         )}
 
+        {title.includes("Proxmox") && (
+          <div className="absolute top-4 left-4 z-20 bg-black/80 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-semibold text-blue-400 border border-blue-500/30 shadow-[0_0_15px_rgba(59,130,246,0.2)] tracking-wide flex items-center gap-2">
+            <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse"></span>
+            Enterprise Homelab
+          </div>
+        )}
+
+        {title.includes("Wedding") && (
+          <div className="absolute top-4 left-4 z-20 bg-black/80 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-semibold text-pink-400 border border-pink-500/30 shadow-[0_0_15px_rgba(236,72,153,0.2)] tracking-wide flex items-center gap-2">
+            <span className="w-1.5 h-1.5 rounded-full bg-pink-500 animate-pulse"></span>
+            Media & Real-Time
+          </div>
+        )}
+
+        {title.includes("MDM") && (
+          <div className="absolute top-4 left-4 z-20 bg-black/80 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-semibold text-emerald-400 border border-emerald-500/30 shadow-[0_0_15px_rgba(16,185,129,0.2)] tracking-wide flex items-center gap-2">
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+            Enterprise IT
+          </div>
+        )}
+
         <img
           src={image?.url}
           width={500}
@@ -170,7 +191,7 @@ const Card = ({ title, image, description, techStack, liveurl }: Project) => {
               e.currentTarget.nextElementSibling.classList.add('flex');
             }
           }}
-          className="object-cover h-full w-full object-center group-hover:scale-[1.05] transition-transform duration-700 ease-out z-[2]"
+          className="object-cover h-full w-full object-center group-hover:scale-110 transition-transform duration-700 ease-out z-[2]"
         />
         
         <div className="hidden absolute inset-0 z-[1] bg-neutral-900 flex-col items-center justify-center text-center p-6 border border-white/5 rounded-xl md:rounded-t-3xl">

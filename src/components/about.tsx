@@ -54,13 +54,25 @@ const About = ({ about, timeline }: AboutProps) => {
       <div className="relative">
         <div className="sticky top-6">
           <Transition>
-            <img
-              src={about.avatar.url}
-              width={400}
-              height={400}
-              alt={about.name}
-              className="rounded-xl max-md:aspect-square object-cover"
-            />
+            <motion.div
+              animate={{ y: [0, -8, 0] }}
+              transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+              className="relative group cursor-pointer w-full h-full"
+            >
+              {/* Diffused Soft Shadow Background */}
+              <div className="absolute -inset-2 bg-gradient-to-b from-blue-500/20 to-purple-600/20 rounded-[2rem] blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              
+              {/* Glassmorphism Wrapper */}
+              <div className="relative rounded-2xl border border-white/10 bg-white/5 p-1.5 shadow-2xl overflow-hidden group-hover:border-white/20 group-hover:scale-[1.03] transition-all duration-500">
+                <img
+                  src={about.avatar.url}
+                  width={400}
+                  height={400}
+                  alt={about.name}
+                  className="rounded-xl max-md:aspect-square object-cover w-full h-full group-hover:brightness-110 transition-all duration-500"
+                />
+              </div>
+            </motion.div>
           </Transition>
         </div>
       </div>
