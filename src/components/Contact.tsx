@@ -41,23 +41,45 @@ const Contact = ({ email, social_handle, about }: ContactProps) => {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("SENDING");
+    setStatusText("Sending message...");
+
+    const { name, email, subject, message } = formData;
 
     try {
-      console.log("Form data:", formData);
-      setTimeout(() => {
-        setStatus("DONE");
-        setFormData({
-          email: "",
-          message: "",
-          name: "",
-          subject: "",
-        });
-        setStatusText("Message sent successfully!");
-      }, 3000);
-    } catch (error: any) {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          subject,
+          message,
+        }),
+      });
+
+      const payload = (await response.json().catch(() => null)) as
+        | { success?: boolean; error?: string }
+        | null;
+
+      if (!response.ok || !payload?.success) {
+        throw new Error(payload?.error || "Failed to send message.");
+      }
+
+      setStatus("DONE");
+      setFormData({
+        email: "",
+        message: "",
+        name: "",
+        subject: "",
+      });
+      setStatusText("Message sent successfully ❤️");
+    } catch (error: unknown) {
+      const errorMessage =
+        error instanceof Error ? error.message : "Unknown error";
       setStatus("ERROR");
-      setStatusText("Error in sending message: " + error.message);
-      console.error("Error sending message:", error.message);
+      setStatusText("Error in sending message: " + errorMessage);
     }
   };
 
@@ -158,8 +180,9 @@ const Contact = ({ email, social_handle, about }: ContactProps) => {
                 <motion.button
                   whileHover="whileHover"
                   initial="initial"
-                  className="border border-white/30 px-8 py-2 rounded-3xl relative overflow-hidden"
+                  className="border border-white/30 px-8 py-2 rounded-3xl relative overflow-hidden disabled:opacity-60 disabled:cursor-not-allowed"
                   type="submit"
+                  disabled={status === "SENDING"}
                 >
                   <TextReveal className="uppercase">
                     {status === "SENDING" ? "Sending..." : "discuss project"}
