@@ -116,12 +116,11 @@ const TimelineCard = ({
       </div>
     </div>
     <motion.div
-      initial={{
-        height: activeIndex === index ? "100%" : 0,
-      }}
+      initial={false}
       animate={{
-        height: activeIndex === index ? "100%" : 0,
+        height: activeIndex === index ? "auto" : 0,
       }}
+      transition={{ duration: 0.4, ease: "easeInOut" }}
       className="overflow-hidden"
     >
       <p className="text-foreground/60 py-4 max-md:text-sm">

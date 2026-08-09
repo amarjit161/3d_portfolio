@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 import { About } from "../utils/interface";
 import { SlideIn, Transition } from "./ui/Transitions";
 import { TextReveal } from "./ui/Typography";
-import { ArrowUpRight } from "./ui/Icons";
+import { ArrowUpRight, Download } from "./ui/Icons";
 import LoaderWrapper from "./LoaderWrapper";
 
 interface HeroProps {
@@ -58,14 +58,25 @@ const Hero = ({ about }: HeroProps) => {
                 ))}
               </p>
             </Transition>
-            <Transition viewport={{ once: true }}>
+            <Transition
+              viewport={{ once: true }}
+              className="flex items-center gap-3 mt-4 flex-wrap justify-center"
+            >
               <Link
                 href={"#contact"}
-                className="px-5 py-3 mt-4 rounded-full border border-white/50 flex items-center gap-2 group"
+                className="px-5 py-3 rounded-full border border-white/50 flex items-center gap-2 group"
               >
                 <TextReveal>Let&apos;s talk</TextReveal>
                 <ArrowUpRight />
               </Link>
+              <a
+                href="/resume.pdf"
+                download
+                className="px-5 py-3 rounded-full border border-white/50 flex items-center gap-2 group"
+              >
+                <TextReveal>Download Resume</TextReveal>
+                <Download />
+              </a>
             </Transition>
           </div>
         </div>

@@ -54,13 +54,15 @@ const Timeline = ({ timeline }: ExperienceProps) => {
                 </span>
               </div>
             </div>
-            <div className="md:pl-12 py-2 text-foreground/50 max-md:text-sm flex items-center justify-between">
-              <span>{exp.company_name}</span>
-              <span>{exp.jobLocation}</span>
+            <div className="md:pl-12 py-2 max-md:text-sm flex items-center justify-between">
+              <span className="font-semibold tracking-wide text-primary">
+                {exp.company_name}
+              </span>
+              <span className="text-foreground/50">{exp.jobLocation}</span>
             </div>
             <motion.div
               initial={{ height: 0 }}
-              animate={{ height: hover === index ? "100%" : 0 }}
+              animate={{ height: hover === index ? "auto" : 0 }}
               transition={{ duration: 0.5 }}
               className="overflow-hidden"
             >

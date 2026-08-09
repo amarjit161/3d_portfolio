@@ -49,12 +49,22 @@ const ProjectDialog = ({
               <h5 className="text-4xl font-bold">{selectedProject.title}</h5>
               <div className="flex items-center gap-4">
                 {selectedProject.githuburl && (
-                  <Link href={selectedProject.githuburl} className="hover:text-white/70 transition-colors">
+                  <Link
+                    href={selectedProject.githuburl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white/70 transition-colors"
+                  >
                     <Github />
                   </Link>
                 )}
                 {selectedProject.liveurl && (
-                  <Link href={selectedProject.liveurl} className="flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 px-4 py-1.5 rounded-full transition-colors font-medium text-sm">
+                  <Link
+                    href={selectedProject.liveurl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 px-4 py-1.5 rounded-full transition-colors font-medium text-sm"
+                  >
                     {selectedProject.title.includes("Passbolt") ? "Open Passbolt" : selectedProject.title.includes("Wedding") ? "View Project" : "Live Demo"}
                     <div className="scale-75"><ExternalLink /></div>
                   </Link>

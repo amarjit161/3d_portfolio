@@ -227,7 +227,7 @@ const Contact = ({ email, social_handle, about }: ContactProps) => {
       </div>
       <footer className="flex items-center justify-between md:px-8 px-2 py-4 text-sm mt-8 border-t border-white/10">
         <Transition>
-          <div className="text-white/60 hover:text-white/90 transition-colors duration-300">&copy; {new Date().getFullYear()} Amarjit | IT Executive & Homelab Engineer</div>
+          <div className="text-white/60 hover:text-white/90 transition-colors duration-300">&copy; {new Date().getFullYear()} Amarjit | IT Executive & Virtualization Specialist</div>
         </Transition>
       </footer>
     </motion.section>

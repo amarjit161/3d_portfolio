@@ -1,7 +1,7 @@
 "use client";
 
 import { useMotionValue, motion, useSpring, useTransform } from "motion/react";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Link from "next/link";
 
 import { TextReveal } from "./Typography";
@@ -10,7 +10,6 @@ interface HoverImageProps {
   heading: string;
   imgSrc: string;
   subheading: string;
-  price?: string;
   linkTarget?: string;
   actionText?: string;
 }
@@ -19,11 +18,11 @@ export const HoverImage = ({
   heading,
   imgSrc,
   subheading,
-  price,
   linkTarget,
   actionText,
 }: HoverImageProps) => {
   const ref = useRef<HTMLAnchorElement | null>(null);
+  const [imgError, setImgError] = useState(false);
 
   const MotionLink = motion.create(Link);
 
@@ -69,31 +68,31 @@ export const HoverImage = ({
           <h4 className="relative z-10 block text-2xl sm:text-4xl font-semibold md:font-bold md:text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50 md:text-6xl tracking-tighter">
             {heading}
           </h4>
-          <span className="md:text-2xl text-foreground/50 md:hidden">
-            {price}
-          </span>
         </div>
         <p className="relative z-10 mt-2 block md:text-base text-sm text-foreground/50 transition-colors duration-500 group-hover:text-neutral-50 pt-2">
           {subheading}
         </p>
       </div>
 
-      <motion.img
-        style={{
-          top,
-          left,
-          translateX: "-50%",
-          translateY: "-50%",
-        }}
-        variants={{
-          initial: { scale: 0, rotate: "-12.5deg" },
-          whileHover: { scale: 1, rotate: "12.5deg" },
-        }}
-        transition={{ type: "spring" }}
-        src={imgSrc}
-        className="absolute z-0 h-24 w-32 rounded-lg object-cover md:h-48 md:w-64 max-md:hidden"
-        alt={`Image representing a link for ${heading}`}
-      />
+      {!imgError && (
+        <motion.img
+          style={{
+            top,
+            left,
+            translateX: "-50%",
+            translateY: "-50%",
+          }}
+          variants={{
+            initial: { scale: 0, rotate: "-12.5deg" },
+            whileHover: { scale: 1, rotate: "12.5deg" },
+          }}
+          transition={{ type: "spring" }}
+          src={imgSrc}
+          onError={() => setImgError(true)}
+          className="absolute z-0 h-24 w-32 rounded-lg object-cover md:h-48 md:w-64 max-md:hidden"
+          alt={`Image representing a link for ${heading}`}
+        />
+      )}
 
       <motion.div
         variants={{
@@ -109,7 +108,6 @@ export const HoverImage = ({
         transition={{ type: "spring" }}
         className="z-10 md:p-4 grid justify-items-end gap-2 max-md:hidden"
       >
-        <span className="md:text-2xl text-neutral-50 pr-1">{price}</span>
         <div className="border border-white/50 rounded-full py-2 px-4 text-white hover:bg-white hover:text-black transition-colors">
           <TextReveal>{actionText || "Discuss the project"}</TextReveal>
         </div>

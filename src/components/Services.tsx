@@ -24,7 +24,6 @@ function Services({ services }: ServiceProps) {
           <Transition key={service._id}>
             <HoverImage
               heading={service.name}
-              price={service.charge}
               imgSrc={service.image.url}
               subheading={service.desc}
             />

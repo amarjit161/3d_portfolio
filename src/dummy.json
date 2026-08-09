@@ -2,7 +2,7 @@
   "about": {
     "name": "Amarjit",
     "title": "IT Executive",
-    "subTitle": "IT Executive | System Administrator | Homelab Enthusiast",
+    "subTitle": "IT Executive | System Administrator | Virtualization & Network Security",
     "description": "I am an IT Executive with hands-on experience in system administration, virtualization, and network security. I specialize in deploying and managing self-hosted solutions, configuring firewalls, and maintaining enterprise IT infrastructure. I actively build and manage homelab environments using Proxmox and VMware, and I have experience deploying production-grade applications on cloud platforms like DigitalOcean.",
     "quote": "Live the Life as you want",
     "exp_year": "5",
@@ -32,21 +32,37 @@
   "role": "admin",
   "timeline": [
     {
-      "company_name": "Relevant IT Background",
-      "summary": "Focused on IT infrastructure, networking, and system administration.",
+      "company_name": "Gurugram University",
+      "summary": "Pursued a comprehensive curriculum in IT infrastructure, computer networking, and system administration, building a strong technical foundation for enterprise IT operations.",
       "sequence": 1,
       "startDate": "2016-01-01T00:00:00.000Z",
       "endDate": "2020-01-01T00:00:00.000Z",
-      "jobTitle": "Bachelor's Degree",
-      "jobLocation": "",
+      "jobTitle": "Bachelor of Computer Applications (BCA)",
+      "jobLocation": "Gurugram, India",
       "bulletPoints": [
-        "Focused on IT infrastructure",
-        "Networking",
-        "System administration"
+        "Core coursework in IT infrastructure management",
+        "Computer networking fundamentals and protocols",
+        "System administration and troubleshooting"
       ],
       "forEducation": true,
       "enabled": true,
       "_id": "65f1fe900556c3f887e9db95"
+    },
+    {
+      "company_name": "University of Delhi",
+      "summary": "Completed a Bachelor of Arts degree, developing strong analytical, communication, and research skills alongside technical studies.",
+      "sequence": 2,
+      "startDate": "2019-01-01T00:00:00.000Z",
+      "endDate": "2023-01-01T00:00:00.000Z",
+      "jobTitle": "Bachelor of Arts (BA)",
+      "jobLocation": "New Delhi, India",
+      "bulletPoints": [
+        "Developed strong analytical and communication skills",
+        "Built a well-rounded academic foundation alongside technical training"
+      ],
+      "forEducation": true,
+      "enabled": true,
+      "_id": "ba_du_2019_2023"
     },
     {
       "company_name": "Cyno Pharmaceutical",
@@ -60,7 +76,16 @@
         "Manage Linux and Windows server environments",
         "Deploy and maintain self-hosted cloud infrastructure",
         "Implement strong network security protocols and firewalls",
-        "Oversee daily IT operations and desktop support"
+        "Oversee daily IT operations and desktop support",
+        "Administer Microsoft 365 environment, including user accounts, licensing, and email management",
+        "Manage and maintain biometric attendance systems for the organization",
+        "Handle end-to-end system administration across the organization's IT infrastructure",
+        "Configure and manage FortiGate firewalls for network security",
+        "Manage CCTV network infrastructure across CP Plus, Hikvision, and Prama systems",
+        "Deploy and manage employee monitoring tools including Hubstaff and Mera.work",
+        "Administer MDM and endpoint security using ManageEngine",
+        "Manage Synology NAS with Active Backup for centralized data backup",
+        "Manage Active Directory and domain controller for the organization"
       ],
       "forEducation": false,
       "enabled": true,
@@ -77,7 +102,13 @@
       "bulletPoints": [
         "Configured and hardened Linux server environments",
         "Managed virtualization tasks using Proxmox/VMware",
-        "Automated routine maintenance tasks"
+        "Automated routine maintenance tasks",
+        "Configured Ubuntu machines for end-user workstations",
+        "Wrote and configured scripts to automate routine tasks",
+        "Installed and configured required applications for end users",
+        "Managed Active Directory domain controller and NAS servers",
+        "Configured and maintained proxy servers",
+        "Configured SIM gateways for call center operations"
       ],
       "forEducation": false,
       "enabled": true,
@@ -111,7 +142,10 @@
       "bulletPoints": [
         "Provided first-line IT support for local users",
         "Handled software installations and basic troubleshooting",
-        "Maintained hardware inventory logs"
+        "Maintained hardware inventory logs",
+        "Administered and configured dialer systems including VICIdial and GoAutoDial",
+        "Configured SIP trunks and extensions for VoIP calling",
+        "Set up and troubleshot softphones for agent workstations"
       ],
       "forEducation": false,
       "enabled": true,
@@ -272,7 +306,7 @@
       "enabled": true
     },
     {
-      "liveurl": "https://passbolt.amarjit.co.in/",
+      "liveurl": "https://pb.amarjit.co.in/",
       "githuburl": "",
       "title": "Passbolt Password Manager",
       "sequence": 4,
@@ -353,7 +387,7 @@
   "social_handles": [
     {
       "platform": "GitHub",
-      "url": "https://github.com/",
+      "url": "https://github.com/amarjit161",
       "image": {
         "public_id": "1708718328750-d4jsq.webp",
         "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718328750-d4jsq.webp"
@@ -363,7 +397,7 @@
     },
     {
       "platform": "LinkedIn",
-      "url": "https://linkedin.com/",
+      "url": "https://www.linkedin.com/in/amarjit-s-5b9664128/",
       "image": {
         "public_id": "1708718263294-2lfj67.webp",
         "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718263294-2lfj67.webp"
@@ -385,7 +419,7 @@
   "services": [
     {
       "name": "App Development",
-      "charge": "$300",
+      "charge": "₹300",
       "desc": "Design direction for business. Get your business on the next level. We help to create great experiences.",
       "enabled": true,
       "_id": "65f1fd690556c3f887e9d94a",
@@ -396,7 +430,7 @@
     },
     {
       "name": "Web & App ",
-      "charge": "$600",
+      "charge": "₹600",
       "desc": "I build brands through cultural insights & strategic vision. Custom crafted business solutions.",
       "image": {
         "public_id": "portfolio3/1710357775748-9vwq4q.jpeg",
@@ -407,7 +441,7 @@
     },
     {
       "name": "UI/UX Solutions",
-      "charge": "$399",
+      "charge": "₹399",
       "desc": "Design direction for business. Get your business on the next level. We help to create great experiences.",
       "image": {
         "public_id": "1706290914024-725ytf",
@@ -419,7 +453,7 @@
     },
     {
       "name": "Global Marketing",
-      "charge": "$699",
+      "charge": "₹699",
       "desc": "Custom marketing solutions. Get your business on the next level. We provide worldwide marketing.",
       "image": {
         "public_id": "portfolio3/1710357668346-ke8kgt.jpeg",
@@ -430,7 +464,7 @@
     },
     {
       "name": "Brand Consultant",
-      "charge": "$499",
+      "charge": "₹499",
       "desc": "I build brands through cultural insights & strategic vision. Custom crafted business solutions.",
       "image": {
         "public_id": "portfolio3/1710357680224-phijt.png",
@@ -441,7 +475,7 @@
     },
     {
       "name": "Wordpress Development",
-      "charge": "$499",
+      "charge": "₹499",
       "desc": "Professional WordPress websites with modern UI and performance optimization.",
       "image": {
         "public_id": "portfolio3/1710357752227-6f5trs.jpeg",
@@ -527,43 +561,30 @@
       }
     },
     {
-      "name": "Linux Administration",
-      "desc": "Strong knowledge of Linux systems, server management, and troubleshooting.",
-      "charge": "",
-      "enabled": true,
-      "_id": "2",
-      "image": {
-        "url": "/images/certificates/linux.png",
-        "public_id": "linux-cert"
-      },
-      "linkTarget": "",
-      "actionText": ""
-    },
-    {
       "name": "Networking & Firewall",
       "desc": "Experience configuring firewalls, routers, and secure network environments.",
       "charge": "",
       "enabled": true,
       "_id": "3",
       "image": {
-        "url": "/images/certificates/networking.png",
+        "url": "/images/certificates/networking.jpg",
         "public_id": "networking-cert"
       },
-      "linkTarget": "",
-      "actionText": ""
+      "linkTarget": "https://www.udemy.com/certificate/UC-9811978e-2129-427a-ab1f-534b9d5507f2/",
+      "actionText": "View Certificate"
     },
     {
-      "name": "Cloud & Self-Hosting",
-      "desc": "Deployed and managed applications on DigitalOcean and self-hosted environments.",
+      "name": "Jetking Certified Hardware & Networking Engineer + Cloud V2",
+      "desc": "Completed the Jetking Certified Hardware & Networking Engineer + Cloud V2 program at Jetking Laxmi Nagar Learning Centre.",
       "charge": "",
       "enabled": true,
-      "_id": "4",
+      "_id": "5",
       "image": {
-        "url": "/images/certificates/cloud.png",
-        "public_id": "cloud-cert"
+        "url": "/images/certificates/jetking.png",
+        "public_id": "jetking-cert"
       },
-      "linkTarget": "",
-      "actionText": ""
+      "linkTarget": "https://drive.google.com/file/d/10o7VIyxw2iEFICoQcjiwLRXmqz3pobjz/view",
+      "actionText": "View Certificate"
     }
   ]
 }

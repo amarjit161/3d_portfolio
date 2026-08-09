@@ -24,7 +24,6 @@ function Certifications({ certifications }: CertificationsProps) {
           <Transition key={cert._id}>
             <HoverImage
               heading={cert.name}
-              price=""
               imgSrc={cert.image.url}
               subheading={cert.desc}
               linkTarget={(cert as any).linkTarget}
