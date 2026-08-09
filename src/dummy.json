@@ -265,6 +265,28 @@
   "youtube": [],
   "projects": [
     {
+      "liveurl": "https://www.snippr.in/",
+      "githuburl": "",
+      "title": "Snippr — Salon Queue & Booking SaaS",
+      "sequence": 7,
+      "image": {
+        "url": "/snippr-logo.svg"
+      },
+      "description": "Currently building a full-stack SaaS platform for salon queue management and appointment booking, letting customers browse salons, join live queues, track wait times, and get AI-powered ETA suggestions.\n\n✨ Features Highlight:\n• Supabase backend for authentication and database\n• Frontend deployed on Vercel\n• Custom domain with Cloudflare DNS management\n• Professional email via Zoho Mail integrated with the snippr.in domain\n• Website UI designed in Figma using the Google Stitch MCP server\n• Companion Android app in development alongside the website",
+      "techStack": [
+        "Next.js",
+        "Supabase",
+        "Vercel",
+        "Cloudflare DNS",
+        "Zoho Mail",
+        "Figma",
+        "Android",
+        "SaaS"
+      ],
+      "_id": "snippr_proj_2026",
+      "enabled": true
+    },
+    {
       "liveurl": "",
       "githuburl": "",
       "title": "MDM & Endpoint Security",
