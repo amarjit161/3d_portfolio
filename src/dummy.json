@@ -265,6 +265,48 @@
   "youtube": [],
   "projects": [
     {
+      "liveurl": "https://majdur.wtf/",
+      "githuburl": "",
+      "title": "Majdur.wtf — Nostalgic Hindi Radio",
+      "sequence": 9,
+      "image": {
+        "url": "https://www.majdur.wtf/icon.svg"
+      },
+      "description": "Built a nostalgia-driven internet radio site riding the 2026 Instagram Reels wave of vintage Bollywood and old Hindi songs going viral again. Branded around the \"labour chowk\" — the street-corner tea-stall gathering spot in India — with the tagline \"पुराने गाने, नई महफ़िल\" (old songs, new gathering), it turns a wave of retro-music nostalgia into a shared, always-on listening room rather than another solo playlist app.\n\n✨ Features Highlight:\n• Curated YouTube playlists of classic Hindi songs pulled and synced via the YouTube Data API\n• Embedded player with Spotify and YouTube Music cross-links\n• Live listener counter for a shared, communal listening feel\n• Custom .wtf domain wired up with Cloudflare DNS\n• Supabase backend for playlist and listener-state data\n• Deployed on Vercel for fast global delivery",
+      "techStack": [
+        "Next.js",
+        "YouTube API",
+        "Supabase",
+        "Cloudflare DNS",
+        "Vercel",
+        "Music Streaming",
+        "Nostalgia / Viral Trend"
+      ],
+      "_id": "majdur_proj_2026",
+      "enabled": true
+    },
+    {
+      "liveurl": "https://www.manishcafe.in/",
+      "githuburl": "",
+      "title": "Manish Cyber Cafe",
+      "sequence": 8,
+      "image": {
+        "url": "https://www.manishcafe.in/favicon.ico"
+      },
+      "description": "Currently building a unified digital platform for Manish Cafe & Cyber Zone, a multi-service cyber cafe bringing gaming, government e-services, and professional skill courses together under one roof — cutting out the need for separate visits across town.\n\n✨ Features Highlight:\n• Gaming House — online slot booking for high-end gaming PCs and PS5 consoles to minimize wait times\n• Online Seva — digital assistance for Aadhar updates, PAN applications, income & caste certificates\n• Skill Courses — structured enrollment for Advanced Tally PRIME, MS Office Advance, and Python for Beginners\n• Centralized booking and service-request flow for walk-in and online customers\n• Clean, mobile-friendly interface for quick navigation across all three service verticals\n\n🚧 Actively in development — new modules and refinements are rolling out regularly.",
+      "techStack": [
+        "Next.js",
+        "Booking System",
+        "Online Seva",
+        "Gaming Lounge",
+        "Course Enrollment",
+        "Local Business",
+        "Responsive"
+      ],
+      "_id": "manishcafe_proj_2026",
+      "enabled": true
+    },
+    {
       "liveurl": "https://www.snippr.in/",
       "githuburl": "",
       "title": "Snippr — Salon Queue & Booking SaaS",

@@ -152,6 +152,13 @@ const Card = ({ title, image, description, techStack, liveurl }: Project) => {
         <div className="absolute inset-0 bg-black/30 z-[5] transition-opacity duration-500 group-hover:bg-black/10" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent z-10" />
 
+        {title.includes("Manish") && (
+          <div className="absolute top-4 left-4 z-20 bg-black/80 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-semibold text-amber-400 border border-amber-500/30 shadow-[0_0_15px_rgba(245,158,11,0.2)] tracking-wide flex items-center gap-2">
+            <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse"></span>
+            In Development
+          </div>
+        )}
+
         {title.includes("Passbolt") && (
           <div className="absolute top-4 left-4 z-20 bg-black/80 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-semibold text-white/90 border border-white/10 shadow-xl tracking-wide">
             Self Hosted on AWS
