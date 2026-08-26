@@ -3,6 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 import { VariantProvider } from "@/utils/hooks";
 import { constructMetadata } from "@/utils";
+import { Analytics } from "@vercel/analytics/next";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -40,6 +41,7 @@ export default function RootLayout({
       </head>
       <body className={poppins.className}>
         <VariantProvider>{children}</VariantProvider>
+        <Analytics />
       </body>
     </html>
   );
